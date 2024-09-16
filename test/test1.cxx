@@ -17,9 +17,9 @@ int main(int argc, char* argv[]) {
 
   for (ii = 1; ii <= nkeys; ii++) {
     fits_read_record(fptr, ii, card, &status);
-    HLPrint(card);
+    HLFits::HLPrint(card);
   }
-  HLPrint("END");
+  HLFits::HLPrint("END");
 
   fits_close_file(fptr, &status);
 

@@ -1,8 +1,12 @@
 # build directory
 build/
 
-# clangd cache
+# clangd
 .cache/
+compile_commands.json
+
+# Doxygen
+docs/Doxyfile*
 
 # Prerequisites
 *.d
